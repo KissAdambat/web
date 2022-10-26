@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+</head>
+<body>
+    <a href="index.html">Főoldal</a>
+    <p>Név</p>
+    <input type="text">
+
+    <p>Adja meg jelszavát</p>
+    <input type="password">
+
+    <p> Maga szavazott? </p> 
+    <input type='checkbox'> Igen
+    <input type='checkbox'> Talán 
+    <input type='checkbox'> Nem 
+
+    <p>Neme?</p>
+    <input type='radio' name='gender'> Fiú
+    <input type='radio' name='gender'> Lányű
+
+    <p>Töltsön fel egy filet</p>
+    <input type='file'>
+
+    <p>Írja be email címét</p>
+    <input type="email">
+
+    <p>Írja le telefonszámát</p>
+    <input type='number'>
+
+    <p>Jelezze mennyire szereti a magyar focit</p>
+    <input type='range'>
+
+    <p>Adja meg születési évét</p>
+    <input type='date'>
+
+    <p>Adja meg a pontos idejét amikor kitölti a lapot</p>
+    <input type='time'>
+
+    <p>Válasszaki a kedvenc színét</p>
+    <input type='color'>
+
+    <p>Írja le az élet történetét</p>
+    <textarea cols=50 rows=5></textarea>
+
+    <p>Válasszon kedvenc tantárgyat</p>
+    <select>
+        <option>---Válassz!--- </option>
+        <option>IKT projectmunka       </option>
+        <option>Fizika                 </option>
+        <option>Tesi                   </option>
+        <option>Irodalom               </option>
+    </select>
+
+    <p>Válasszon uticélt</p>
+    <select title='Válassz úticélt!'>
+        <option disabled=disable selected>---Válassz!--- </option>
+    
+        <optgroup label='Ausztria'>
+            <option>Neusiedler See</option>
+            <option>Wolfgangsee</option>
+            <option>Wörthersee</option>
+        </optgroup>
+    
+        <optgroup label='Olaszország'>
+            <option>Lago di Como</option>
+            <option>Lago di Garda</option>
+        </optgroup>
+    
+        <optgroup label='Szlovénia'>
+            <option>Blejsko jezero</option>
+            <option>Bohinjsko jezero</option>
+        </optgroup>
+    </select>
+
+    <p>Válasszon kedvenc programozási nyelvet</p>
+    <input list='programnyelv'>
+    <datalist id='programnyelv'>
+        <option value='C#'>
+        <option value='Java'>
+        <option value='PHP'>
+        <option value='Python'>
+    </datalist>
+    <p>
+    <input type='reset'>
+    <input type='button' value='Feldolgozás'>
+    <input type='submit'>
+    </p>
+</body>
+</html>
