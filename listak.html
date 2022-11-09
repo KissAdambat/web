@@ -6,15 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listák</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
 </head>
 <body>
 
     <p>
-        <a href="index.html">Főoldal</a> |
-        <a href="keplink.html">Képlinkes feladat</a> |
-        <a class="active" href="listak.html">Listák</a> |
-        <a href="tablazat.html">Órarend</a> |
-        <a href="urlap.html">Űrlap</a>
+        <ul>
+            <li><a href="index.html">Home</a> | </li>
+            <li><a href="keplink.html">Képlinkes feladat</a> | </li>
+            <li><a class="active" href="listak.html">Listák</a> | </li>
+            <li><a href="tablazat.html">Órarend</a> | </li>
+            <li><a href="urlap.html">Űrlap</a> </li>
+            </ul>
     </p>
 
         <h1 style="color: ;blueviolet">Kiss Ádám</h1>
@@ -22,16 +53,16 @@
 
         <p style="background-color:palevioletred; width: 300px;">A kedvenc tantárgyaim</p>
         <ol style="color: rgb(99, 26, 71)">
-            <li>IKT PROJECTMUNKA</li>
-            <li>TESI</li>
-            <li>PROGRAMOZÁSI ALAP ISMERETEK</li>
+            <p>1. IKT PROJECTMUNKA</p>
+            <p>2. TESI</p>
+            <p>3. PROGRAMOZÁSI ALAP ISMERETEK</p>
         </ol>
 
         <p style="background-color: slateblue; color:white;width: 300px;">Hobbijaim</p>
-        <ul style="color:royalblue">
-            <li>Videójátékokkal játszani</li>
-            <li>Programozás</li>
-            <li>Kézizni</li>
-        </ul>
+        <ol style="color:royalblue">
+            <p>Videójátékokkal játszani</p>
+            <p>Programozás</p>
+            <p>Kézizni</p>
+        </ol>
 </body>
 </html>

@@ -5,13 +5,45 @@
         <meta name="viewport" content="width=device-width, initinal-scale=1.0">
         <title> KÁ oldala</title>
         <link rel="stylesheet" href="style.css">
+
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #04AA6D;
+            }
+            </style>
     </head>
 <body>
-    <a class="active" href="index.html">Home</a> |
-    <a href="keplink.html">Képlinkes feladat</a> |
-    <a href="listak.html">Listák</a> |
-    <a href="tablazat.html">Órarend</a> |
-    <a href="urlap.html">Űrlap</a>
+    <ul>
+    <li><a class="active" href="index.html">Home</a> | </li>
+    <li><a href="keplink.html">Képlinkes feladat</a> | </li>
+    <li><a href="listak.html">Listák</a> | </li>
+    <li><a href="tablazat.html">Órarend</a> | </li>
+    <li><a href="urlap.html">Űrlap</a> </li>
+    </ul>
 
     <h1>Kiss Ádám</h1>
     <h2>Kiss Ádám</h2>
