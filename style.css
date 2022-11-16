@@ -4,9 +4,21 @@ a{
 
 .active{
     color: green;
-    
+     
 }
 
 body{
     background-color: #25fb9e;
+}
+
+.kep{
+        border: 5px solid black;
+        border-radius: 5%;
+        width: 200px;
+        margin:30px;
+        transition: 1s;
+}
+
+.kep:hover{
+        transform: scale(1.2);
 }

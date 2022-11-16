@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évszakok</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        div{
+            float: left;
+        }
+
+            p{
+                font-size: larger;
+                text-align: center;
+                transition: 1s;
+            }
+
+        ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #04AA6D;
+            }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="keplink.html">Képlinkes feladat</a></li>
+        <li><a href="listak.html">Listák</a></li>
+        <li><a href="tablazat.html">Órarend</a></li>
+        <li><a href="urlap.html">Űrlap</a> </li>
+        <li><a class="active" href="evszakok.html">Évszakok</a></li>
+    </ul>
+
+    <h1>Évszakok</h1>
+
+    <div>
+        <img class="kep" src="img/spring.jpg" alt="tavasz">
+        <b><p>Tavasz</p></b>
+    </div>
+
+    <div>
+        <img class="kep" src="img/summer.jpg" alt="nyár">
+        <b><p>Nyár</p></b>
+    </div>
+
+    <div>
+        <img class="kep" src="img/fall.jpg" alt="ősz">
+        <b><p>Ősz</p></b>
+    </div>
+
+    <div>
+        <img class="kep" src="img/winter.jpg" alt="tél">
+        <b><p>Tél</p></b>
+    </div>
+</body>
+</html>
