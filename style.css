@@ -8,7 +8,7 @@ a{
 }
 
 body{
-    background-color: #25fb9e;
+    background-color: lightseagreen;
 }
 
 .kep{
@@ -21,4 +21,13 @@ body{
 
 .kep:hover{
         transform: scale(1.2);
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: green;
 }
