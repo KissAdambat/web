@@ -1,82 +1,98 @@
 <!DOCTYPE html>
-<html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initinal-scale=1.0">
-        <title> KÁ oldala</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon/favicon.ico">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon/favicon.ico">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        <style>
-            ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333;
-            }
-            
-            li {
-              float: left;
-            }
-            
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
-            
-            li a:hover:not(.active) {
-              background-color: #111;
-            }
-            
-            .active {
-              background-color: #04AA6D;
-            }
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
 
-            </style>
-    </head>
-<body>
+.menu a {
+  background-color: black;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: white;
+}
 
-    <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="keplink.html">Képlinkes feladat</a></li>
-    <li><a href="listak.html">Listák</a></li>
-    <li><a href="tablazat.html">Órarend</a></li>
-    <li><a href="urlap.html">Űrlap</a></li>
-    <li><a href="evszakok.html">Évszakok</a></li>
-    </ul>
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
 
+.right {
+  background-color: black;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
 
-    <h1>Kiss Ádám</h1>
-    <h2>Kiss Ádám</h2>
-    <h3 style="color: darkgreen; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; " >Kiss Ádám</h3>
-    <h4>Kiss Ádám</h4>
-    <h5>Kiss Ádám</h5>
-    <h6>Kiss Ádám</h6>
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+h1, h2, p {
+    font-size: 98%;
+    color: #BF40BF;
+}
 
-    <p>
-        Az alábbi
-        <b>képen</b>
-        a 
-        <i>kollázsképem</i>
-        láthatod.
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:black;padding:15px;text-align:center;">
+  <h1>Kiss Ádám</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="keplink.html">Képlink</a>
+    <a href="listak.html">Listák</a>
+    <a href="tablazat.html">Órarend</a>
+    <a href="urlap.html">Űrlap</a>
+    <a href="evszakok.html">Évszakok</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>Rólam</h2>
+    <p>Szia Ádám vagyok. Sokat szoktam játszani legfőképp LOL-t és CSGO-t. 
+        <img style="width: 100%;" src="img/en.jpg" alt="Én">
     </p>
-    <img src="img/en.jpg" alt="A képen látható a kollázsom..." title="kollázs" width="300">
-    <footer>
-      Készítette: Kiss Ádám <br>
-      <address>kissa@kkszki.hu</address>
-    </footer>
+  </div>
+</div>
+
+<footer>
+    Készítette: Kiss Ádám <br>
+    <address>kissa@kkszki.hu</address>
+</footer>
+
 </body>
 </html>
