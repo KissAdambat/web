@@ -79,21 +79,21 @@ h1, h2, p {
   </div>
 
   <div class="main">
-    <h1>Kiss Ádám</h1>
-    <h2>Kiss Ádám</h2>
-    <h3 style="color: darkgreen; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; " >Kiss Ádám</h3>
-    <h4>Kiss Ádám</h4>
-    <h5>Kiss Ádám</h5>
-    <h6>Kiss Ádám</h6>
-
-    <p>
-        Az alábbi
-        <b>képen</b>
-        a 
-        <i>kollázsképem</i>
-        láthatod.
-    </p>
-    <img src="img/en.jpg" alt="A képen látható a kollázsom..." title="kollázs" width="300">
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Számol</legend>
+            <br>
+            <input type="number" name="sz" id="a" placeholder="szám1" requiredg>
+            <input type="number" name="sz" id="b" placeholder="szám2" required>
+            <input type="text" name="sz" id="c" placeholder="eredmény" readonly>
+            <br><br>
+            <input type="submit" value="+" onclick="ad()">
+            <input type="submit" value="-" onclick="ki()">
+            <input type="submit" value="*" onclick="szor()">
+            <input type="submit" value="/" onclick="oszt()">
+            <input type="reset" value="törlés">
+        </fieldset>
+    </form>
   </div>
 
   <div class="right">
@@ -108,5 +108,22 @@ h1, h2, p {
     <address>kissa@kkszki.hu</address>
 </footer>
 
+<script>
+    function ad() {
+        c.value = Number(a.value) + Number(b.value)
+    }
+
+    function ki() {
+        c.value = Number(a.value) - Number(b.value)
+    }
+
+    function szor() {
+        c.value = Number(a.value) * Number(b.value)
+    }
+
+    function oszt() {
+        c.value = Number(a.value) / Number(b.value)
+    }
+</script> 
 </body>
 </html>

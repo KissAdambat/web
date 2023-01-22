@@ -44,24 +44,59 @@
         .active {
           background-color: red;
         }
+
+         .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+
+        .menu a {
+          background-color: black;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: white;
+        }
+
+
+        h1, h2, p {
+          font-size: 98%;
+          color: #BF40BF;
+        }
         </style>
 </head>
 <body>
+  <div style="background-color:black;padding:15px;text-align:center;">
+    <h1>Képlinkes feladat</h1>
+  </div>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="keplink.html">Képlinkes feladat</a></li>
-        <li><a href="listak.html">Listák</a></li>
-        <li><a href="tablazat.html">Órarend</a></li>
-        <li><a href="urlap.html">Űrlap</a></li>
-        <li><a href="evszakok.html">Évszakok</a></li>
-        </ul>
-
-    <h1 style="color: white;">Képlinkes feladat</h1>
-    <br>
-        <a href="https://www.mksz.hu/">
-    <img src="img/kezi.jpg" alt="Ez az én kedvenc dolgom" width="300">
-        </a>
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="keplink.html">Képlink</a>
+      <a href="listak.html">Listák</a>
+      <a href="tablazat.html">Órarend</a>
+      <a href="urlap.html">Űrlap</a>
+      <a href="evszakok.html">Évszakok</a>
+      <a href="homoktovis/homoktovis.html">Homoktövis</a>
+      <a href="szam.html">Számológép</a>
+    </div>
+  
+    <div class="main">
+      <h1>Szeretek kézizni</h1>
+      <a href="https://www.mksz.hu/">
+  <img src="img/kezi.jpg" alt="Ez az én kedvenc dolgom" width="300">
+      </a>
+    </div>
+  </div>
         <footer>
           Készítette: Kiss Ádám <br>
           <address>kissa@kkszki.hu</address>
