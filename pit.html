@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz tétel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2family=Noto+Serif+Lao:wght@100&display=swap');
+
+        h1 {
+            font-family: 'Noto Serif Lao', serif;
+        }
+        
+        body {
+            color: white;
+        }
+
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="keplink.html">Képlinkes feladat</a></li>
+        <li><a href="listak.html">Listák</a></li>
+        <li><a href="tablazat.html">Órarend</a></li>
+        <li><a href="urlap.html">Űrlap</a></li>
+        <li><a href="evszakok.html">Évszakok</a></li>
+        <li><a href="szam.html">Számológép</a></li>
+        <li><a class="active" href="pit.html">Pitagorasz</a></li>
+        </ul>
+
+
+
+    <h1>Pitagorasz tétel</h1>
+    <img src="/img/pit.png" alt="Pitagorasz tétel">
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Pitagorasz tétel</legend>
+            <label for="a">a oldal:</label>
+            <input type="text" name="pit" id="a" oninput="szam()">
+            <label for="b">b oldal:</label>
+            <input type="text" name="pit" id="b" oninput="szam()">
+            <label for="c">c oldal:</label>
+            <input type="text" name="pit" id="c">
+            <input type="button" value="Törlés" ondblclick="torol()">
+        </fieldset>
+    </form>
+
+
+    <script>
+        function szam () {
+            if (a.value != 0 && b.value != 0) {
+                c.value = Math.sqrt ((a.value * a.value) + (b.value * b.value))
+            }
+            else if (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt ((a.value * a.value) + (c.value * c.value))
+            }
+            if (b.value != 0 && c.value != 0) {
+                a.value = Math.sqrt ((b.value * b.value) + (c.value * c.value))
+            }
+        }
+
+        function torol () {
+            a.value = "";
+            b.value = "";
+            c.value = "";
+        }
+    </script>
+</body>
+</html>
